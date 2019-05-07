@@ -11,7 +11,14 @@ public class InsertionSorter extends Sorter {
     public InsertionSorter(ArrayList< String> usersData) {
         super(usersData);
     }
+    /*
+    PRECONDITION: Input is an ArrayList of strings
+    POSTCONDITION: ArrayList of Strings sorted in ascending order
 
+    For elements 1 to n - 1, insert el in the correct position
+    in the sorted region
+
+    */
     public void mySort() { // insertionSort
         for (int numInserted = 1; numInserted < elements.size(); numInserted++) {
             insert(elements, numInserted);

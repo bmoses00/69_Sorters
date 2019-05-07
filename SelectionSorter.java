@@ -11,6 +11,13 @@ public class SelectionSorter extends Sorter {
     public SelectionSorter(  ArrayList< String> usersData) {
         super(usersData);
     }
+    /*
+    PRECONDITION: Input is an ArrayList of strings
+    POSTCONDITION: ArrayList of Strings sorted in ascending order
+
+    For elements 0 to n - 2, swap the el with lowest element
+
+    */
 
     public void mySort() { // selection sort
         for (int counter = 0; counter < elements.size(); counter++) {
